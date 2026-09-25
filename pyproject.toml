@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghost-grounding"
+version = "1.0.0"
+description = "Sub-Token Semantic a11y & Optical Wireframe Multiplexer for Computer-Use AI Agents"
+authors = [{ name = "AAH20", email = "research@aah20.dev" }]
+license = { text = "Apache-2.0" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "pillow>=10.0.0"
+]
+
+[project.scripts]
+ghost-grounding = "ghost_grounding.cli:main"
